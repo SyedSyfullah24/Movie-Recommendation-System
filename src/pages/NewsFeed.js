@@ -100,7 +100,7 @@ const MovieList = () => {
     if (loading) return;
     setLoading(true);
     try {
-      const apiKey = 'b3025798d43b0aa539630ffad8d7bd59'; // Replace with your TMDb API key
+      const apiKey = 'd131ba5cf95b2f78baf2fd531eaa5dae'; // Replace with your TMDb API key
       const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=${page}`;
       const response = await fetch(url);
       const data = await response.json();
