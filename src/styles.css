@@ -1,0 +1,79 @@
+/* General body styling with a dark cinematic theme */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1e; /* Dark background for a theater-like feel */
+  color: #f0f0f0; /* Light text for contrast */
+}
+
+.App {
+  text-align: center;
+  padding: 50px;
+  background-color: #2a2a2d; /* Dark container for a sleek look */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Deep shadow for a 3D effect */
+  border-radius: 12px; /* Rounded corners for the app container */
+  max-width: 1200px;
+  margin: 30px auto; /* Center the container */
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Flexible layout */
+  gap: 30px; /* Space between movie cards */
+  width: 100%;
+  padding: 20px;
+  justify-items: center;
+}
+
+.movie-card {
+  background: linear-gradient(145deg, #424242, #1c1c1e); /* Sleek dark gradient */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Strong shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  text-align: left; /* Align text to the left */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-bottom: 15px;
+}
+
+.movie-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #ffdd57; /* Yellow-golden title color */
+}
+
+.movie-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #d1d1d1; /* Soft gray for readability */
+}
+
+.movie-card:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+.spinner {
+  margin: 50px auto;
+  font-size: 24px; /* Larger font size */
+  color: #ffdd57; /* Gold/yellow text for spinner */
+  text-align: center;
+  font-weight: 600; /* Bold */
+  letter-spacing: 1.5px; /* Extra spacing */
+}
+
+.no-more-movies {
+  font-size: 20px;
+  color: #ffdd57;
+  text-align: center;
+  margin-top: 40px;
+}
